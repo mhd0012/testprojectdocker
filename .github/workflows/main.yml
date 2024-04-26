@@ -18,7 +18,7 @@ jobs:
 
     - name: Build Docker image
       run: |
-        docker build . -t mhd0012/testprojectdocker
+        docker build . -t mhd0012/testdocker
 
     - name: Log in to Docker Hub
       uses: docker/login-action@v1
@@ -28,4 +28,4 @@ jobs:
 
     - name: Push Docker image to Docker Hub
       run: |
-        docker push mhd0012/testprojectdocker
+        docker push mhd0012/testdocker
